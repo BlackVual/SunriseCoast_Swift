@@ -11,9 +11,10 @@ protocol signUpDelegate {
 }
 
 class SignUpView:UIView{
-    var userNameTextField:UITextField?
-    var mailAddressTextField:UITextField?
-    var signUpButton:UIButton?
+    var userNameTextField:UITextField!
+    var mailAddressTextField:UITextField!
+    var signUpButton:UIButton!
+    var signInButton:UIButton!
     
     
 }
