@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D602BF9F2625890C003C79DA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D602BF9E2625890C003C79DA /* SignUpView.swift */; };
-		D62EE7B226783BF200595E17 /* PasswordDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62EE7B126783BF200595E17 /* PasswordDate.swift */; };
+		D62EE7B4267843B500595E17 /* PasswordDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62EE7B3267843B500595E17 /* PasswordDate.swift */; };
 		D6490205261C02B200A2E0A4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6490204261C02B200A2E0A4 /* SignUpViewController.swift */; };
 		D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */; };
 		D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */; };
@@ -46,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		D602BF9E2625890C003C79DA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		D62EE7B126783BF200595E17 /* PasswordDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDate.swift; sourceTree = "<group>"; };
+		D62EE7B3267843B500595E17 /* PasswordDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordDate.swift; sourceTree = "<group>"; };
 		D6490204261C02B200A2E0A4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D661B15125FD9C6B00ED4D28 /* ClubSunriseCoast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubSunriseCoast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 			children = (
 				D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */,
 				D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */,
-				D62EE7B126783BF200595E17 /* PasswordDate.swift */,
+				D62EE7B3267843B500595E17 /* PasswordDate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,8 +322,8 @@
 				D602BF9F2625890C003C79DA /* SignUpView.swift in Sources */,
 				D661B19625FDF43D00ED4D28 /* DevpostViewController.swift in Sources */,
 				D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */,
+				D62EE7B4267843B500595E17 /* PasswordDate.swift in Sources */,
 				D661B19B25FDFD8B00ED4D28 /* SideMenuViewController.swift in Sources */,
-				D62EE7B226783BF200595E17 /* PasswordDate.swift in Sources */,
 				D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
