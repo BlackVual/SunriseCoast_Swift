@@ -11,6 +11,7 @@ protocol signUpDelegate {
 }
 
 class SignUpView:UIView{
+//    各パーツプロパティの宣言
     var userNameTextField:UITextField!
     var mailAddressTextField:UITextField!
     var signUpButton:UIButton!
