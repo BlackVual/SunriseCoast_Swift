@@ -16,6 +16,7 @@ class SignUpView:UIView{
     var mailAddressTextField:UITextField!
     var signUpButton:UIButton!
     var signInButton:UIButton!
+    var 
     
     
 }
