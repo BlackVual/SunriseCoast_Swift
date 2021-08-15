@@ -163,7 +163,6 @@
 				D661B15D25FD9C6C00ED4D28 /* Assets.xcassets */,
 				D602BF9E2625890C003C79DA /* SignUpView.swift */,
 				D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */,
-				D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */,
 				D6A903CF266F57B00008C23F /* UIImageView.swift */,
 			);
 			path = View;
@@ -172,6 +171,7 @@
 		D6E6683C26004A8D00CACF14 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */,
 				D661B19A25FDFD8B00ED4D28 /* SideMenuViewController.swift */,
 				D661B15825FD9C6B00ED4D28 /* ViewController.swift */,
 				D6490204261C02B200A2E0A4 /* SignUpViewController.swift */,
