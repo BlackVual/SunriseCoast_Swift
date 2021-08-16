@@ -18,4 +18,5 @@ class SignUpView:UIView{
     var signInButton:UIButton!
     var gitpull用のテスト変数:String!
     
+    
 }
