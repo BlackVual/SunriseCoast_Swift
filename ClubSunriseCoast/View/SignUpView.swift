@@ -7,7 +7,7 @@
 
 import UIKit
 protocol signUpDelegate {
-    
+
 }
 
 class SignUpView:UIView{
@@ -16,7 +16,4 @@ class SignUpView:UIView{
     var mailAddressTextField:UITextField!
     var signUpButton:UIButton!
     var signInButton:UIButton!
-    var gitpull用のテスト変数:String!
-    
-    
 }
