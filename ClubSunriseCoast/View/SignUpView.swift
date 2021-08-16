@@ -17,4 +17,5 @@ class SignUpView:UIView{
     var signUpButton:UIButton!
     var signInButton:UIButton!
     
+    
 }
