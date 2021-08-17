@@ -23,6 +23,7 @@
 		D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */; };
 		D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */; };
 		D68830A426CBB30500C4D5F4 /* manegedfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68830A326CBB30500C4D5F4 /* manegedfile.swift */; };
+		D68830A626CBC9D600C4D5F4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68830A526CBC9D600C4D5F4 /* test.swift */; };
 		D6A903D0266F57B00008C23F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A903CF266F57B00008C23F /* UIImageView.swift */; };
 		D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */; };
 		D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */; };
@@ -68,6 +69,7 @@
 		D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCelldataSorce.swift; sourceTree = "<group>"; };
 		D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewanimation.swift; sourceTree = "<group>"; };
 		D68830A326CBB30500C4D5F4 /* manegedfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manegedfile.swift; sourceTree = "<group>"; };
+		D68830A526CBC9D600C4D5F4 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		D6A903CF266F57B00008C23F /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellData.swift; sourceTree = "<group>"; };
 		D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				D68830A326CBB30500C4D5F4 /* manegedfile.swift */,
+				D68830A526CBC9D600C4D5F4 /* test.swift */,
 			);
 			path = git_maneged;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */,
 				D62EE7B4267843B500595E17 /* PasswordDate.swift in Sources */,
 				D661B19B25FDFD8B00ED4D28 /* SideMenuViewController.swift in Sources */,
+				D68830A626CBC9D600C4D5F4 /* test.swift in Sources */,
 				D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
