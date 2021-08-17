@@ -24,6 +24,7 @@
 		D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */; };
 		D68830A426CBB30500C4D5F4 /* manegedfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68830A326CBB30500C4D5F4 /* manegedfile.swift */; };
 		D68830A626CBC9D600C4D5F4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68830A526CBC9D600C4D5F4 /* test.swift */; };
+		D68830A826CBF09C00C4D5F4 /* AutoMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68830A726CBF09C00C4D5F4 /* AutoMerge.swift */; };
 		D6A903D0266F57B00008C23F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A903CF266F57B00008C23F /* UIImageView.swift */; };
 		D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */; };
 		D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */; };
@@ -70,6 +71,7 @@
 		D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewanimation.swift; sourceTree = "<group>"; };
 		D68830A326CBB30500C4D5F4 /* manegedfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manegedfile.swift; sourceTree = "<group>"; };
 		D68830A526CBC9D600C4D5F4 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		D68830A726CBF09C00C4D5F4 /* AutoMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMerge.swift; sourceTree = "<group>"; };
 		D6A903CF266F57B00008C23F /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellData.swift; sourceTree = "<group>"; };
 		D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				D68830A326CBB30500C4D5F4 /* manegedfile.swift */,
 				D68830A526CBC9D600C4D5F4 /* test.swift */,
+				D68830A726CBF09C00C4D5F4 /* AutoMerge.swift */,
 			);
 			path = git_maneged;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				D661B15925FD9C6B00ED4D28 /* ViewController.swift in Sources */,
 				D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */,
 				D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */,
+				D68830A826CBF09C00C4D5F4 /* AutoMerge.swift in Sources */,
 				D6490205261C02B200A2E0A4 /* SignUpViewController.swift in Sources */,
 				D6A903D0266F57B00008C23F /* UIImageView.swift in Sources */,
 				D68830A426CBB30500C4D5F4 /* manegedfile.swift in Sources */,
