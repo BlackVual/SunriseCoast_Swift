@@ -6,3 +6,4 @@
 //
 
 import Foundation
+//現在はマスターブランチです。
