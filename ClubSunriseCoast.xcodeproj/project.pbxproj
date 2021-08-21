@@ -22,9 +22,6 @@
 		D661B19B25FDFD8B00ED4D28 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B19A25FDFD8B00ED4D28 /* SideMenuViewController.swift */; };
 		D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */; };
 		D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */; };
-		D68830A426CBB30500C4D5F4 /* manegedfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68830A326CBB30500C4D5F4 /* manegedfile.swift */; };
-		D68830A626CBC9D600C4D5F4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68830A526CBC9D600C4D5F4 /* test.swift */; };
-		D68830A826CBF09C00C4D5F4 /* AutoMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68830A726CBF09C00C4D5F4 /* AutoMerge.swift */; };
 		D6A903D0266F57B00008C23F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A903CF266F57B00008C23F /* UIImageView.swift */; };
 		D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */; };
 		D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */; };
@@ -69,9 +66,6 @@
 		D661B19A25FDFD8B00ED4D28 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCelldataSorce.swift; sourceTree = "<group>"; };
 		D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewanimation.swift; sourceTree = "<group>"; };
-		D68830A326CBB30500C4D5F4 /* manegedfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manegedfile.swift; sourceTree = "<group>"; };
-		D68830A526CBC9D600C4D5F4 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		D68830A726CBF09C00C4D5F4 /* AutoMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMerge.swift; sourceTree = "<group>"; };
 		D6A903CF266F57B00008C23F /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellData.swift; sourceTree = "<group>"; };
 		D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
@@ -125,7 +119,6 @@
 		D661B15325FD9C6B00ED4D28 /* ClubSunriseCoast */ = {
 			isa = PBXGroup;
 			children = (
-				D68830A226CBB2CE00C4D5F4 /* git_maneged */,
 				D6E6683A26004A8000CACF14 /* Model */,
 				D6E6683B26004A8800CACF14 /* View */,
 				D6E6683C26004A8D00CACF14 /* Controller */,
@@ -151,16 +144,6 @@
 				D661B17825FD9C6D00ED4D28 /* Info.plist */,
 			);
 			path = ClubSunriseCoastUITests;
-			sourceTree = "<group>";
-		};
-		D68830A226CBB2CE00C4D5F4 /* git_maneged */ = {
-			isa = PBXGroup;
-			children = (
-				D68830A326CBB30500C4D5F4 /* manegedfile.swift */,
-				D68830A526CBC9D600C4D5F4 /* test.swift */,
-				D68830A726CBF09C00C4D5F4 /* AutoMerge.swift */,
-			);
-			path = git_maneged;
 			sourceTree = "<group>";
 		};
 		D6E6683A26004A8000CACF14 /* Model */ = {
@@ -332,10 +315,8 @@
 				D661B15925FD9C6B00ED4D28 /* ViewController.swift in Sources */,
 				D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */,
 				D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */,
-				D68830A826CBF09C00C4D5F4 /* AutoMerge.swift in Sources */,
 				D6490205261C02B200A2E0A4 /* SignUpViewController.swift in Sources */,
 				D6A903D0266F57B00008C23F /* UIImageView.swift in Sources */,
-				D68830A426CBB30500C4D5F4 /* manegedfile.swift in Sources */,
 				D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */,
 				D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */,
 				D602BF9F2625890C003C79DA /* SignUpView.swift in Sources */,
@@ -343,7 +324,6 @@
 				D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */,
 				D62EE7B4267843B500595E17 /* PasswordDate.swift in Sources */,
 				D661B19B25FDFD8B00ED4D28 /* SideMenuViewController.swift in Sources */,
-				D68830A626CBC9D600C4D5F4 /* test.swift in Sources */,
 				D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
