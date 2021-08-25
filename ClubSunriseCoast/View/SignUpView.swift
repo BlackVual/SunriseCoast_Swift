@@ -22,40 +22,80 @@ class SignUpView:UIView{
     }
     
     func setLayout() {
-
+        self.backgroundColor = .white
         setButtonFeild()
     }
     
     func setButtonFeild() {
 //ボタン・フィールド定義
-        let signUpButton:UIButton = {
+        
+        //イメージビュー
+        let imageView
+        
+        //新規登録ボタン
+        let loginButton:UIButton = {
             let returnUIButton = UIButton()
-    //コードレイアウト用の定義
             returnUIButton.translatesAutoresizingMaskIntoConstraints = false
-    //デザイン
             returnUIButton.layer.borderColor = UIColor.blue.cgColor
-            returnUIButton.backgroundColor = .white
-            returnUIButton.setTitle("Sign Up", for: .normal)
-    //これは遷移関数を実装した後に追記
-//            returnUIButton.addTarget(<#T##target: Any?##Any?#>, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
+            returnUIButton.backgroundColor = .blue
+            returnUIButton.layer.cornerRadius = 10.0
+            returnUIButton.setTitle("Login", for: .normal)
+        //これは遷移関数を実装した後に追記
+        //            returnUIButton.addTarget(<#T##target: Any?##Any?#>, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
             return returnUIButton
         }()
-        
-        var signInButton:UIButton!
-        var userNameTextField:UITextField!
-        var mailAddressTextField:UITextField!
+        //パスワード入力テキストフィールド
+        let passwordTextField:UITextField = {
+            let returnTextField = UITextField()
+            returnTextField.borderStyle = .roundedRect
+            returnTextField.placeholder = "パスワード"
+            return returnTextField
+        }()
+        let userNameTextField:UITextField! = {
+            let returnUserNameTextField = UITextField()
+            returnUserNameTextField.borderStyle = .roundedRect
+            returnUserNameTextField.placeholder = "ユーザー名"
+            return returnUserNameTextField
+        }()
+        var mailAddressTextField:UITextField! = {
+            let returnTextField = UITextField()
+            returnTextField.borderStyle = .roundedRect
+            returnTextField.placeholder = "メールアドレス"
+            return returnTextField
+        }()
 
 //add作業
-        addSubview(signUpButton)
+        addSubview(loginButton)
+        addSubview(userNameTextField)
+        addSubview(mailAddressTextField)
+        addSubview(passwordTextField)
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        userNameTextField.translatesAutoresizingMaskIntoConstraints = false
+        mailAddressTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
 
 //レイアウト
-        signUpButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        signUpButton.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        signUpButton.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.25).isActive = true
-        signUpButton.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.03125).isActive = true
+
+        //ユーザー名のテキストフィールド
+        userNameTextField.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.75).isActive = true
+        userNameTextField.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.03125).isActive = true
+        userNameTextField.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 300).isActive = true
+        userNameTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50).isActive = true
+        //ユーザー名のテキストフィールド
+        passwordTextField.widthAnchor.constraint(equalTo: userNameTextField.widthAnchor).isActive = true
+        passwordTextField.heightAnchor.constraint(equalTo: userNameTextField.heightAnchor).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: userNameTextField.bottomAnchor, constant: 5).isActive = true
+        passwordTextField.leadingAnchor.constraint(equalTo: userNameTextField.leadingAnchor).isActive = true
+        //ユーザー名のテキストフィールド
+        loginButton.widthAnchor.constraint(equalTo: userNameTextField.widthAnchor, multiplier: 0.25).isActive = true
+        loginButton.heightAnchor.constraint(equalTo: userNameTextField.heightAnchor).isActive = true
+        loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 10).isActive = true
+        loginButton.trailingAnchor.constraint(equalTo: userNameTextField.trailingAnchor).isActive = true
         
+
         
     }
+    
     
 }
 
