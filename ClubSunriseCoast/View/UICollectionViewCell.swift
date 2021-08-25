@@ -15,7 +15,11 @@ class UICollectionViewcell:UICollectionViewCell{
     var imgViewheight:CGFloat!
     var imgViewrect: CGRect!
 //    var uiView:UIviewAnimation!
-    var uiimageview = UIimageView()
+    var uiimageview:UIImageView = {
+        var returnUIimageView = UIImageView()
+        
+        return returnUIimageView
+    }()
 
     
     var image:UIImage! {
