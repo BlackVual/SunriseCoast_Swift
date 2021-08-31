@@ -10,7 +10,7 @@ import UIKit
 
 struct SignUpViewData {
     let image:UIImage = {
-        var returnImage = UIImage(named: "loginImage")!
+        var returnImage = UIImage(named: "LoginBack")!
         return returnImage
     }()
     

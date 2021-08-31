@@ -26,6 +26,7 @@ class signUp:UIViewController {
     func imageSetUp() {
         signUpView.imageView.image = signUpViewData.image
         signUpView.loginImageView.image = signUpViewData.loginImage
+        
     }
     
     

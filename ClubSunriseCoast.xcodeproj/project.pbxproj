@@ -25,6 +25,7 @@
 		D6ABC83926D5DFA3007BB7DF /* SignUpViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABC83826D5DFA3007BB7DF /* SignUpViewData.swift */; };
 		D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */; };
 		D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */; };
+		D6B65BD326D8F98300B8D071 /* LayoutFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B65BD226D8F98300B8D071 /* LayoutFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D6ABC83826D5DFA3007BB7DF /* SignUpViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewData.swift; sourceTree = "<group>"; };
 		D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellData.swift; sourceTree = "<group>"; };
 		D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		D6B65BD226D8F98300B8D071 /* LayoutFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		D661B15325FD9C6B00ED4D28 /* ClubSunriseCoast */ = {
 			isa = PBXGroup;
 			children = (
+				D6B65BD126D8F95A00B8D071 /* Function */,
 				D6E6683A26004A8000CACF14 /* Model */,
 				D6E6683B26004A8800CACF14 /* View */,
 				D6E6683C26004A8D00CACF14 /* Controller */,
@@ -144,6 +147,14 @@
 				D661B17825FD9C6D00ED4D28 /* Info.plist */,
 			);
 			path = ClubSunriseCoastUITests;
+			sourceTree = "<group>";
+		};
+		D6B65BD126D8F95A00B8D071 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				D6B65BD226D8F98300B8D071 /* LayoutFunc.swift */,
+			);
+			path = Function;
 			sourceTree = "<group>";
 		};
 		D6E6683A26004A8000CACF14 /* Model */ = {
@@ -313,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D661B15925FD9C6B00ED4D28 /* ViewController.swift in Sources */,
+				D6B65BD326D8F98300B8D071 /* LayoutFunc.swift in Sources */,
 				D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */,
 				D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */,
 				D6490205261C02B200A2E0A4 /* SignUpViewController.swift in Sources */,

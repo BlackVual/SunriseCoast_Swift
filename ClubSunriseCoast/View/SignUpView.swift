@@ -24,16 +24,11 @@ class SignUpView:UIView{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setLayout()
+        setObjectAndLayout()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setLayout() {
-        self.backgroundColor = .white
-        setObjectAndLayout()
     }
     
     func setObjectAndLayout() {
@@ -64,40 +59,88 @@ class SignUpView:UIView{
             returnUserNameTextField.placeholder = "ユーザー名"
             return returnUserNameTextField
         }()
-        var mailAddressTextField:UITextField! = {
-            let returnTextField = UITextField()
-            returnTextField.borderStyle = .roundedRect
-            returnTextField.placeholder = "メールアドレス"
-            return returnTextField
+//        let signUpViewLabel:UILabel = {
+//            let returnSignUpViewLabel = UILabel()
+//            returnSignUpViewLabel.text = "Welcome To Club Sunrise Coast"
+//            returnSignUpViewLabel.font = returnSignUpViewLabel.font.withSize(returnSignUpViewLabel.font.pointSize*2)
+//            returnSignUpViewLabel.adjustsFontSizeToFitWidth = true
+//            returnSignUpViewLabel.textColor = UIColor.orange
+//            returnSignUpViewLabel.backgroundColor = UIColor.init(red: 235/255, green: 235/255, blue: 235/255, alpha: 100/100)
+//            return returnSignUpViewLabel
+//        }()
+        
+//        次はテキストフィールドの上にSRC ID とかって書くラベルを追加する。
+        let signUpTitleLabel1:UILabel = {
+            let returnLabel = UILabel()
+            returnLabel.text = "SRC ID"
+            returnLabel.textColor = .white
+            returnLabel.backgroundColor = .clear
+            returnLabel.textAlignment = NSTextAlignment.center
+            returnLabel.font = returnLabel.font.withSize(returnLabel.font.pointSize*3)
+            returnLabel.adjustsFontSizeToFitWidth = true
+            return returnLabel
         }()
-        let signUpViewLabel:UILabel = {
-            let returnSignUpViewLabel = UILabel()
-            returnSignUpViewLabel.text = "Welcome to Club Sunrise Coast..."
-            returnSignUpViewLabel.font = UIFont.boldSystemFont(ofSize: 30)
-            returnSignUpViewLabel.textColor = UIColor.orange
-            returnSignUpViewLabel.backgroundColor = UIColor.init(red: 66/255, green: 66/255, blue: 66/255, alpha: 100/100)
-            returnSignUpViewLabel.adjustsFontSizeToFitWidth = true
-            return returnSignUpViewLabel
+        let signUpTitleLabel2:UILabel = {
+            let returnLabel = UILabel()
+            returnLabel.text = "Sunrise Coastの全てをマネージメント"
+            returnLabel.textColor = .white
+            returnLabel.backgroundColor = .clear
+            returnLabel.textAlignment = NSTextAlignment.center
+            returnLabel.font = returnLabel.font.withSize(signUpTitleLabel1.font.pointSize)
+            returnLabel.font = UIFont.boldSystemFont(ofSize: returnLabel.font.pointSize)
+            returnLabel.adjustsFontSizeToFitWidth = true
+            return returnLabel
         }()
+        
+        let signUpGuideLabel:UILabel = {
+            let returnLabel = UILabel()
+            returnLabel.text = "-----または招待を受け取りSRCメンバーに加入-----"
+            returnLabel.textColor = .white
+            returnLabel.backgroundColor = .clear
+            returnLabel.textAlignment = NSTextAlignment.center
+//            returnLabel.font = returnLabel.font.withSize(signUpTitleLabel1.font.pointSize)
+            returnLabel.font = UIFont.boldSystemFont(ofSize: returnLabel.font.pointSize)
+            returnLabel.adjustsFontSizeToFitWidth = true
+            return returnLabel
+        }()
+        
+        let signUpButton:UIButton! = {
+            let returnUIButton = UIButton()
+            returnUIButton.setTitle("SignUp", for: .normal)
+            returnUIButton.titleLabel?.font = UIFont.boldSystemFont(ofSize:returnUIButton.titleLabel?.font.pointSize ?? 100)
+            returnUIButton.backgroundColor = UIColor.init(red: 193/255, green: 236/255, blue: 255/255, alpha: 100/100)
+            returnUIButton.titleLabel?.adjustsFontSizeToFitWidth = true
+            
+            return returnUIButton
+        }()
+
 
 //add作業
         addSubview(imageView)
         addSubview(userNameTextField)
-        addSubview(mailAddressTextField)
         addSubview(passwordTextField)
-        addSubview(signUpViewLabel)
+//        addSubview(signUpViewLabel)
         addSubview(loginImageView)
         addSubview(loginButton)
+        addSubview(signUpTitleLabel1)
+        addSubview(signUpTitleLabel2)
+        addSubview(signUpGuideLabel)
+        addSubview(signUpButton)
+
         
         
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         userNameTextField.translatesAutoresizingMaskIntoConstraints = false
-        mailAddressTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        signUpViewLabel.translatesAutoresizingMaskIntoConstraints = false
+//        signUpViewLabel.translatesAutoresizingMaskIntoConstraints = false
         imageView.translatesAutoresizingMaskIntoConstraints = false
         loginImageView.translatesAutoresizingMaskIntoConstraints = false
+        signUpTitleLabel1.translatesAutoresizingMaskIntoConstraints = false
+        signUpTitleLabel2.translatesAutoresizingMaskIntoConstraints = false
+        signUpGuideLabel.translatesAutoresizingMaskIntoConstraints = false
+        signUpButton.translatesAutoresizingMaskIntoConstraints = false
 //レイアウト
+        //タイトルラベル
 
         //ユーザー名のテキストフィールド
         userNameTextField.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.75).isActive = true
@@ -123,16 +166,36 @@ class SignUpView:UIView{
         imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         imageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -UIScreen.main.bounds.height/8).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
 
-        //ラベル
-        signUpViewLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        signUpViewLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-        signUpViewLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor).isActive = true
-        signUpViewLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+//        //ラベル
+//        signUpViewLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.1).isActive = true
+//        signUpViewLabel.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
+//        signUpViewLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: UIScreen.main.bounds.height/1.25).isActive = true
+//        signUpViewLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         
+        //表題ラベル
+        signUpTitleLabel1.widthAnchor.constraint(equalTo: userNameTextField.widthAnchor, multiplier: 0.75).isActive = true
+        signUpTitleLabel1.heightAnchor.constraint(equalTo: userNameTextField.heightAnchor, multiplier: 1.25).isActive = true
+        signUpTitleLabel1.leadingAnchor.constraint(equalToSystemSpacingAfter: userNameTextField.leadingAnchor, multiplier: 5).isActive = true
+        signUpTitleLabel1.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: UIScreen.main.bounds.height/5.5).isActive = true
+        //表題説明ラベル
+        signUpTitleLabel2.widthAnchor.constraint(equalTo: signUpTitleLabel1.widthAnchor).isActive = true
+        signUpTitleLabel2.heightAnchor.constraint(equalTo: signUpTitleLabel1.heightAnchor).isActive = true
+        signUpTitleLabel2.leadingAnchor.constraint(equalTo: signUpTitleLabel1.leadingAnchor).isActive = true
+        signUpTitleLabel2.topAnchor.constraint(equalTo: signUpTitleLabel1.bottomAnchor, constant: 5).isActive = true
         
-
+        //サインアップ案内ラベル
+        signUpGuideLabel.widthAnchor.constraint(equalTo: passwordTextField.widthAnchor).isActive = true
+        signUpGuideLabel.heightAnchor.constraint(equalTo: passwordTextField.heightAnchor).isActive = true
+        signUpGuideLabel.leadingAnchor.constraint(equalTo: passwordTextField.leadingAnchor).isActive = true
+        signUpGuideLabel.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 10).isActive = true
+        
+        //サインアップボタン
+        signUpButton.widthAnchor.constraint(equalTo: signUpGuideLabel.widthAnchor, multiplier: 0.5).isActive = true
+        signUpButton.heightAnchor.constraint(equalTo: signUpGuideLabel.heightAnchor).isActive = true
+        signUpButton.leadingAnchor.constraint(equalTo: signUpGuideLabel.leadingAnchor, constant: UIScreen.main.bounds.width/6).isActive = true
+        signUpButton.topAnchor.constraint(equalTo: signUpGuideLabel.bottomAnchor, constant: 10).isActive = true
         
     }
     
