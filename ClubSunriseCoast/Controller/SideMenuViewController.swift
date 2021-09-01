@@ -193,10 +193,10 @@ extension SideMenuViewController{
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.sidemenuViewcontroller(self, didselectItemAt: indexPath)
-        let signUpVC = signUp()
+        let signInVC = SignInViewController()
 
         if indexPath.row == 0{
-            navigationController?.pushViewController(signUpVC, animated: true)
+            navigationController?.pushViewController(signInVC, animated: true)
             
         } else if indexPath.row == 1{
             return

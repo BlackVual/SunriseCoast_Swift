@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct SignUpViewData {
+struct SignInViewData {
     let image:UIImage = {
         var returnImage = UIImage(named: "LoginBack")!
         return returnImage
