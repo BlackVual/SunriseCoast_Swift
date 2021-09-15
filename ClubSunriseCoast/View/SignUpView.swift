@@ -8,7 +8,7 @@
 import Foundation
 import  UIKit
 
-class signUpview:UIView{
+class SignUpview:UIView{
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .black

@@ -101,7 +101,7 @@ class  SignInView:UIView{
         returnUIButton.addTarget(self, action: #selector(singUpButtontapped), for: .touchUpInside)
         return returnUIButton
     }()
-    
+    //サインアップボタンタップ押下時の挙動
     @objc func singUpButtontapped(){
         delegate?.viewtransiton(singUpButtontapped: self)
     }

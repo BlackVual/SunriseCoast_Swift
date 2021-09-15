@@ -18,15 +18,20 @@
 		D661B16125FD9C6C00ED4D28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D661B15F25FD9C6C00ED4D28 /* LaunchScreen.storyboard */; };
 		D661B16C25FD9C6D00ED4D28 /* ClubSunriseCoastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B16B25FD9C6D00ED4D28 /* ClubSunriseCoastTests.swift */; };
 		D661B17725FD9C6D00ED4D28 /* ClubSunriseCoastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B17625FD9C6D00ED4D28 /* ClubSunriseCoastUITests.swift */; };
-		D661B19625FDF43D00ED4D28 /* DevpostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B19525FDF43D00ED4D28 /* DevpostViewController.swift */; };
 		D661B19B25FDFD8B00ED4D28 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B19A25FDFD8B00ED4D28 /* SideMenuViewController.swift */; };
 		D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */; };
 		D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */; };
 		D6ABC83926D5DFA3007BB7DF /* SignInViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABC83826D5DFA3007BB7DF /* SignInViewData.swift */; };
 		D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */; };
 		D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */; };
-		D6B65BD326D8F98300B8D071 /* LayoutFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B65BD226D8F98300B8D071 /* LayoutFunc.swift */; };
+		D6C0FA3E26E7369A000A0978 /* SemiModalIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0FA3D26E7369A000A0978 /* SemiModalIndicatorView.swift */; };
+		D6C0FA4026E73B69000A0978 /* SemiModalOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0FA3F26E73B69000A0978 /* SemiModalOverlayView.swift */; };
+		D6C0FA4226E74824000A0978 /* SemiModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0FA4126E74824000A0978 /* SemiModalPresentationController.swift */; };
+		D6C0FA4426E761F9000A0978 /* SemiModalDismissAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0FA4326E761F9000A0978 /* SemiModalDismissAnimatedTransition.swift */; };
+		D6CE69CF26DF62CD00F8DA05 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CE69CE26DF62CD00F8DA05 /* SignUpViewController.swift */; };
 		D6E2F64026DF5ACE00205107 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2F63F26DF5ACE00205107 /* SignUpView.swift */; };
+		D6F23AFC26E5AF4600C094F2 /* SemiModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F23AFB26E5AF4600C094F2 /* SemiModalPresenter.swift */; };
+		D6F23B0026E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F23AFF26E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,15 +69,20 @@
 		D661B17225FD9C6D00ED4D28 /* ClubSunriseCoastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClubSunriseCoastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D661B17625FD9C6D00ED4D28 /* ClubSunriseCoastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubSunriseCoastUITests.swift; sourceTree = "<group>"; };
 		D661B17825FD9C6D00ED4D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D661B19525FDF43D00ED4D28 /* DevpostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevpostViewController.swift; sourceTree = "<group>"; };
 		D661B19A25FDFD8B00ED4D28 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCelldataSorce.swift; sourceTree = "<group>"; };
 		D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewanimation.swift; sourceTree = "<group>"; };
 		D6ABC83826D5DFA3007BB7DF /* SignInViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewData.swift; sourceTree = "<group>"; };
 		D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellData.swift; sourceTree = "<group>"; };
 		D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
-		D6B65BD226D8F98300B8D071 /* LayoutFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutFunc.swift; sourceTree = "<group>"; };
+		D6C0FA3D26E7369A000A0978 /* SemiModalIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalIndicatorView.swift; sourceTree = "<group>"; };
+		D6C0FA3F26E73B69000A0978 /* SemiModalOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalOverlayView.swift; sourceTree = "<group>"; };
+		D6C0FA4126E74824000A0978 /* SemiModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalPresentationController.swift; sourceTree = "<group>"; };
+		D6C0FA4326E761F9000A0978 /* SemiModalDismissAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalDismissAnimatedTransition.swift; sourceTree = "<group>"; };
+		D6CE69CE26DF62CD00F8DA05 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D6E2F63F26DF5ACE00205107 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D6F23AFB26E5AF4600C094F2 /* SemiModalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalPresenter.swift; sourceTree = "<group>"; };
+		D6F23AFF26E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalDismissInteractiveTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +133,7 @@
 		D661B15325FD9C6B00ED4D28 /* ClubSunriseCoast */ = {
 			isa = PBXGroup;
 			children = (
-				D6B65BD126D8F95A00B8D071 /* Function */,
+				D6F23AFA26E5AF1700C094F2 /* SemiModal */,
 				D6E6683A26004A8000CACF14 /* Model */,
 				D6E6683B26004A8800CACF14 /* View */,
 				D6E6683C26004A8D00CACF14 /* Controller */,
@@ -151,14 +161,6 @@
 			path = ClubSunriseCoastUITests;
 			sourceTree = "<group>";
 		};
-		D6B65BD126D8F95A00B8D071 /* Function */ = {
-			isa = PBXGroup;
-			children = (
-				D6B65BD226D8F98300B8D071 /* LayoutFunc.swift */,
-			);
-			path = Function;
-			sourceTree = "<group>";
-		};
 		D6E6683A26004A8000CACF14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +177,7 @@
 			children = (
 				D661B15A25FD9C6B00ED4D28 /* Main.storyboard */,
 				D661B15D25FD9C6C00ED4D28 /* Assets.xcassets */,
+				D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */,
 				D602BF9E2625890C003C79DA /* SignInView.swift */,
 				D6E2F63F26DF5ACE00205107 /* SignUpView.swift */,
 				D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */,
@@ -185,15 +188,27 @@
 		D6E6683C26004A8D00CACF14 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */,
-				D661B19A25FDFD8B00ED4D28 /* SideMenuViewController.swift */,
 				D661B15825FD9C6B00ED4D28 /* ViewController.swift */,
+				D661B19A25FDFD8B00ED4D28 /* SideMenuViewController.swift */,
 				D6490204261C02B200A2E0A4 /* SignInViewController.swift */,
-				D661B19525FDF43D00ED4D28 /* DevpostViewController.swift */,
+				D6CE69CE26DF62CD00F8DA05 /* SignUpViewController.swift */,
 				D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */,
 				D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6F23AFA26E5AF1700C094F2 /* SemiModal */ = {
+			isa = PBXGroup;
+			children = (
+				D6F23AFB26E5AF4600C094F2 /* SemiModalPresenter.swift */,
+				D6C0FA4126E74824000A0978 /* SemiModalPresentationController.swift */,
+				D6F23AFF26E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift */,
+				D6C0FA4326E761F9000A0978 /* SemiModalDismissAnimatedTransition.swift */,
+				D6C0FA3D26E7369A000A0978 /* SemiModalIndicatorView.swift */,
+				D6C0FA3F26E73B69000A0978 /* SemiModalOverlayView.swift */,
+			);
+			path = SemiModal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,19 +343,24 @@
 			files = (
 				D661B15925FD9C6B00ED4D28 /* ViewController.swift in Sources */,
 				D6E2F64026DF5ACE00205107 /* SignUpView.swift in Sources */,
-				D6B65BD326D8F98300B8D071 /* LayoutFunc.swift in Sources */,
 				D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */,
 				D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */,
+				D6C0FA4426E761F9000A0978 /* SemiModalDismissAnimatedTransition.swift in Sources */,
 				D6490205261C02B200A2E0A4 /* SignInViewController.swift in Sources */,
 				D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */,
+				D6F23B0026E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift in Sources */,
 				D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */,
+				D6C0FA4226E74824000A0978 /* SemiModalPresentationController.swift in Sources */,
 				D6ABC83926D5DFA3007BB7DF /* SignInViewData.swift in Sources */,
+				D6CE69CF26DF62CD00F8DA05 /* SignUpViewController.swift in Sources */,
 				D602BF9F2625890C003C79DA /* SignInView.swift in Sources */,
-				D661B19625FDF43D00ED4D28 /* DevpostViewController.swift in Sources */,
 				D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */,
 				D62EE7B4267843B500595E17 /* PasswordDate.swift in Sources */,
 				D661B19B25FDFD8B00ED4D28 /* SideMenuViewController.swift in Sources */,
+				D6C0FA3E26E7369A000A0978 /* SemiModalIndicatorView.swift in Sources */,
+				D6C0FA4026E73B69000A0978 /* SemiModalOverlayView.swift in Sources */,
 				D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */,
+				D6F23AFC26E5AF4600C094F2 /* SemiModalPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
