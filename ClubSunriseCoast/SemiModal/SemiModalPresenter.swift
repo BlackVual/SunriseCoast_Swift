@@ -10,7 +10,8 @@ import UIKit
 
 public protocol SemimodalPresenterDelegate:AnyObject{
     ///ViewControllerからモーダルの高さを決定するのに使用
-    var semimodalContetsHeight: CGFloat{get}
+//    var semimodalContetsHeight: CGFloat{get}
+    func ObjectHeightGet(presentingControllerArg:UIViewController) -> CGFloat
 }
 
 class SemiModalPresenter: NSObject{

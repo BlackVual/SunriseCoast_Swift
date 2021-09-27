@@ -10,15 +10,37 @@ import UIKit
 
 class SignUpViewController:UIViewController{
     
+    //インスタンス化（Model）
+    let signUpData = SignUpViewData()
+    //インスタンス化（View）
+    let signUpView = SignUpview()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        
+        //SetUp
+        //Viewの追加
+        viewSetup()
+        //背景画像セット
+        imageSetUp()
     }
     
 }
 
 extension SignUpViewController: SemimodalPresenterDelegate {
-    var semimodalContetsHeight: CGFloat {
-        return 
+    func ObjectHeightGet(presentingControllerArg: UIViewController) -> CGFloat {
+        return presentingControllerArg.view.bounds.height * 0.9
     }
+    
+    //SetUp
+    func viewSetup() {
+        self.view = signUpView
+    }
+    
+    //SetUp
+    func imageSetUp() {
+        signUpView.imageView.image = signUpData.image
+    }
+
+    
 }

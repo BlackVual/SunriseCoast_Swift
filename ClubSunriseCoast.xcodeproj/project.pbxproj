@@ -22,6 +22,7 @@
 		D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */; };
 		D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */; };
 		D6ABC83926D5DFA3007BB7DF /* SignInViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABC83826D5DFA3007BB7DF /* SignInViewData.swift */; };
+		D6AFFAD826F1F0BC00ED6AE2 /* SignUpViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AFFAD726F1F0BC00ED6AE2 /* SignUpViewData.swift */; };
 		D6B1D78B26689AB70023D24A /* CollectionViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */; };
 		D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */; };
 		D6C0FA3E26E7369A000A0978 /* SemiModalIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0FA3D26E7369A000A0978 /* SemiModalIndicatorView.swift */; };
@@ -73,6 +74,7 @@
 		D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCelldataSorce.swift; sourceTree = "<group>"; };
 		D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewanimation.swift; sourceTree = "<group>"; };
 		D6ABC83826D5DFA3007BB7DF /* SignInViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewData.swift; sourceTree = "<group>"; };
+		D6AFFAD726F1F0BC00ED6AE2 /* SignUpViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewData.swift; sourceTree = "<group>"; };
 		D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellData.swift; sourceTree = "<group>"; };
 		D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		D6C0FA3D26E7369A000A0978 /* SemiModalIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalIndicatorView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				D6B1D78A26689AB70023D24A /* CollectionViewCellData.swift */,
 				D66FF7ED2668C12700FDBD88 /* CollectionViewCelldataSorce.swift */,
 				D6ABC83826D5DFA3007BB7DF /* SignInViewData.swift */,
+				D6AFFAD726F1F0BC00ED6AE2 /* SignUpViewData.swift */,
 				D62EE7B3267843B500595E17 /* PasswordDate.swift */,
 			);
 			path = Model;
@@ -351,6 +354,7 @@
 				D6F23B0026E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift in Sources */,
 				D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */,
 				D6C0FA4226E74824000A0978 /* SemiModalPresentationController.swift in Sources */,
+				D6AFFAD826F1F0BC00ED6AE2 /* SignUpViewData.swift in Sources */,
 				D6ABC83926D5DFA3007BB7DF /* SignInViewData.swift in Sources */,
 				D6CE69CF26DF62CD00F8DA05 /* SignUpViewController.swift in Sources */,
 				D602BF9F2625890C003C79DA /* SignInView.swift in Sources */,

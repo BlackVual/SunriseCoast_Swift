@@ -28,6 +28,7 @@ class SemiModalPresentationController: UIPresentationController {
     private let indicator:SemiModalIndicatorView
     ///セミモーダルの高さのデフォルト比率
     private let presentedViewControllerHeigtRatio:CGFloat = 0.8
+
     
     init(presentedViewControlller:UIViewController,presenting presentingViewController:UIViewController?,ovarlayView:SemiModalOverlayView,indicator:SemiModalIndicatorView) {
         self.ovarlay = ovarlayView
@@ -44,7 +45,7 @@ class SemiModalPresentationController: UIPresentationController {
     override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
         ///Delegateで高さが指定されているときはその高さを適用
         if let delegate = presentedViewController as? SemimodalPresenterDelegate{
-            return CGSize(width: parentSize.width, height: delegate.semimodalContetsHeight)
+            return CGSize(width: parentSize.width, height: delegate.ObjectHeightGet(presentingControllerArg: presentingViewController))
         }
         
         ///上記でない場合は標準比率から計算
