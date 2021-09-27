@@ -13,8 +13,6 @@ class SignUpview:UIView{
         super.init(frame: frame)
         
         self.backgroundColor = .white
-        //デリゲート適用
-        dateOfBirthTextField.delegate = self
         
         autoLayoutSetUp()
         autoLayout()
@@ -60,12 +58,14 @@ class SignUpview:UIView{
     
     // 決定ボタン押下
     @objc func done() {
-        dateOfBirthTextField.endEditing(true)
+
         
         // 日付のフォーマット
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        dateOfBirthTextField.text = "\(formatter.string(from: Date()))"
+        formatter.dateFormat = "yyyy/MM/dd"
+        dateOfBirthTextField.text = formatter.string(from: datapicker.date)
+        
+        dateOfBirthTextField.endEditing(true)
     }
     
     func autoLayoutSetUp() {
@@ -115,43 +115,20 @@ class SignUpview:UIView{
 extension SignUpview{
     func datapickerSetup() {
         // ピッカー設定
-        datapicker.datePickerMode = UIDatePicker.Mode.dateAndTime
+        datapicker.datePickerMode = .date
         datapicker.timeZone = NSTimeZone.local
-        datapicker.locale = Locale.current
-//        datapicker.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 500)
+        datapicker.locale = NSLocale(localeIdentifier: "ja_JP") as Locale?
         datapicker.preferredDatePickerStyle = .wheels
         
         //ピッカーのツールバーのレイアウト設定
-//        toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: 35))
+        toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: 35))
         //ツールバーに各セット
         toolbar.setItems([spacelItem, doneItem], animated: true)
         
-        // インプットビュー設定
-//        dateOfBirthTextField.inputView = datapicker
-//        dateOfBirthTextField.inputAccessoryView = toolbar
+//         インプットビュー設定
+        dateOfBirthTextField.inputView = datapicker
+        dateOfBirthTextField.inputAccessoryView = toolbar
         
     }
 }
 
-extension SignUpview:UITextFieldDelegate{
-    //テキストフィールドがタップされた際に発火されるデリゲートメソッド
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        self.addSubview(datapicker)
-        self.addSubview(toolbar)
-        datapicker.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        datapicker.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-        datapicker.heightAnchor.constraint(equalTo: self.heightAnchor, constant: 50).isActive = true
-        datapicker.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-        
-//        toolbar.topAnchor.constraint(equalTo: datapicker.topAnchor).isActive = true
-//        toolbar.bottomAnchor.constraint(equalTo: datapicker.bottomAnchor, constant: -100).isActive = true
-//        toolbar.trailingAnchor.constraint(equalTo: datapicker.trailingAnchor, constant: 50).isActive = true
-//        toolbar.leadingAnchor.constraint(equalTo: datapicker.leadingAnchor).isActive = true
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
-        datapicker.removeFromSuperview()
-        toolbar.removeFromSuperview()
-    }
-    
-}
