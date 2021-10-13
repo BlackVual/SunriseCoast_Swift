@@ -19,6 +19,26 @@ class SignUpview:UIView{
         datapickerSetup()
     }
     
+    override func draw(_ rect: CGRect) {
+        let centerValue = UIBezierFormula()
+        let YValue = centerValue.centerYaxisGet(topObjecMinY: dateOfBirthTextField.frame.minY, buttomObjecMaxY: mailAddressTextField.frame.maxY)
+        // テキストフィールド間の直線 -------------------------------------
+        // UIBezierPath のインスタンス生成
+        let line = UIBezierPath();
+        // 起点
+        line.move(to: CGPoint(x: self.frame.minX, y: YValue));
+        // 帰着点
+        line.addLine(to: CGPoint(x: self.frame.maxX, y:YValue));
+        // ラインを結ぶ
+        line.close()
+        // 色の設定
+        UIColor.init(red: 230/255, green: 230/255, blue: 230/255, alpha: 100/100).setStroke()
+        // ライン幅
+        line.lineWidth = 2
+        // 描画
+        line.stroke();
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -56,6 +76,27 @@ class SignUpview:UIView{
     let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
     let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
     
+    //メールアドレステキストフィールド
+    let mailAddressTextField:UITextField = {
+        let returnTextField = UITextField()
+        returnTextField.borderStyle = .roundedRect
+        returnTextField.placeholder = "mail@address.com"
+        return returnTextField
+    }()
+    //パスワードテキストフィールド
+    let passwordTextField:UITextField = {
+        let returnTextField = UITextField()
+        returnTextField.borderStyle = .roundedRect
+        returnTextField.placeholder = "パスワード"
+        return returnTextField
+    }()
+    //パスワード再確認テキストフィールド
+    let passwordConfirmTextField:UITextField = {
+        let returnTextField = UITextField()
+        returnTextField.borderStyle = .roundedRect
+        returnTextField.placeholder = "パスワード再確認"
+        return returnTextField
+    }()
     // 決定ボタン押下
     @objc func done() {
 
@@ -74,6 +115,9 @@ class SignUpview:UIView{
         addSubview(lastNameTextField)
         addSubview(firstNameTextField)
         addSubview(dateOfBirthTextField)
+        addSubview(mailAddressTextField)
+        addSubview(passwordTextField)
+        addSubview(passwordConfirmTextField)
 
         //UIオートレイアウトと競合させない処理
         lastNameTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -81,6 +125,9 @@ class SignUpview:UIView{
         dateOfBirthTextField.translatesAutoresizingMaskIntoConstraints = false
         imageView.translatesAutoresizingMaskIntoConstraints = false
         datapicker.translatesAutoresizingMaskIntoConstraints = false
+        mailAddressTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordConfirmTextField.translatesAutoresizingMaskIntoConstraints = false
         
     }
     
@@ -105,9 +152,24 @@ class SignUpview:UIView{
         //生年月日フィールド
         dateOfBirthTextField.leadingAnchor.constraint(equalTo: lastNameTextField.leadingAnchor).isActive = true
         dateOfBirthTextField.trailingAnchor.constraint(equalTo: firstNameTextField.trailingAnchor).isActive = true
-        dateOfBirthTextField.topAnchor.constraint(equalTo: lastNameTextField.bottomAnchor, constant: 30).isActive = true
+        dateOfBirthTextField.topAnchor.constraint(equalTo: lastNameTextField.bottomAnchor, constant: 20).isActive = true
         dateOfBirthTextField.heightAnchor.constraint(equalTo: lastNameTextField.heightAnchor).isActive = true
-        
+        //メールアドレスフィールド
+        mailAddressTextField.leadingAnchor.constraint(equalTo: dateOfBirthTextField.leadingAnchor).isActive = true
+        mailAddressTextField.trailingAnchor.constraint(equalTo: dateOfBirthTextField.trailingAnchor).isActive = true
+        mailAddressTextField.topAnchor.constraint(equalTo: dateOfBirthTextField.bottomAnchor, constant: 40).isActive = true
+        mailAddressTextField.heightAnchor.constraint(equalTo: dateOfBirthTextField.heightAnchor).isActive = true
+        //パスワードフィールド
+        passwordTextField.leadingAnchor.constraint(equalTo: mailAddressTextField.leadingAnchor).isActive = true
+        passwordTextField.trailingAnchor.constraint(equalTo: mailAddressTextField.trailingAnchor).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: mailAddressTextField.bottomAnchor, constant: 20).isActive = true
+        passwordTextField.heightAnchor.constraint(equalTo: mailAddressTextField.heightAnchor).isActive = true
+        //パスワード確認フィールド
+        passwordConfirmTextField.leadingAnchor.constraint(equalTo: passwordTextField.leadingAnchor).isActive = true
+        passwordConfirmTextField.trailingAnchor.constraint(equalTo: passwordTextField.trailingAnchor).isActive = true
+        passwordConfirmTextField.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20).isActive = true
+        passwordConfirmTextField.heightAnchor.constraint(equalTo: passwordTextField.heightAnchor).isActive = true
+        //
     }
     
 }

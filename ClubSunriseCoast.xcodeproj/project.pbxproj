@@ -10,6 +10,7 @@
 		D602BF9F2625890C003C79DA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D602BF9E2625890C003C79DA /* SignInView.swift */; };
 		D62EE7B4267843B500595E17 /* PasswordDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62EE7B3267843B500595E17 /* PasswordDate.swift */; };
 		D6490205261C02B200A2E0A4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6490204261C02B200A2E0A4 /* SignInViewController.swift */; };
+		D65FF38D2716C58600E4AC11 /* UIBezierFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */; };
 		D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */; };
 		D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */; };
 		D661B15925FD9C6B00ED4D28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15825FD9C6B00ED4D28 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		D602BF9E2625890C003C79DA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D62EE7B3267843B500595E17 /* PasswordDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordDate.swift; sourceTree = "<group>"; };
 		D6490204261C02B200A2E0A4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierFormula.swift; sourceTree = "<group>"; };
 		D661B15125FD9C6B00ED4D28 /* ClubSunriseCoast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubSunriseCoast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				D6ABC83826D5DFA3007BB7DF /* SignInViewData.swift */,
 				D6AFFAD726F1F0BC00ED6AE2 /* SignUpViewData.swift */,
 				D62EE7B3267843B500595E17 /* PasswordDate.swift */,
+				D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				D6C0FA4426E761F9000A0978 /* SemiModalDismissAnimatedTransition.swift in Sources */,
 				D6490205261C02B200A2E0A4 /* SignInViewController.swift in Sources */,
 				D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */,
+				D65FF38D2716C58600E4AC11 /* UIBezierFormula.swift in Sources */,
 				D6F23B0026E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift in Sources */,
 				D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */,
 				D6C0FA4226E74824000A0978 /* SemiModalPresentationController.swift in Sources */,
