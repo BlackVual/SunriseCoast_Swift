@@ -108,6 +108,14 @@ class SignUpview:UIView{
         
         dateOfBirthTextField.endEditing(true)
     }
+    //次に進むボタン
+    let nextViewButton:UIButton = {
+        let returnUIButton = UIButton()
+        returnUIButton.backgroundColor = UIColor.init(red: 193/255, green: 236/255, blue: 255/255, alpha: 100/100)
+        returnUIButton.layer.cornerRadius = 10.0
+        returnUIButton.setTitle("次に進む", for: .normal)
+        return returnUIButton
+    }()
     
     func autoLayoutSetUp() {
         //各オブジェクトをViewに追加
@@ -118,6 +126,7 @@ class SignUpview:UIView{
         addSubview(mailAddressTextField)
         addSubview(passwordTextField)
         addSubview(passwordConfirmTextField)
+        addSubview(nextViewButton)
 
         //UIオートレイアウトと競合させない処理
         lastNameTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -128,7 +137,7 @@ class SignUpview:UIView{
         mailAddressTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordConfirmTextField.translatesAutoresizingMaskIntoConstraints = false
-        
+        nextViewButton.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func autoLayout() {
@@ -169,7 +178,11 @@ class SignUpview:UIView{
         passwordConfirmTextField.trailingAnchor.constraint(equalTo: passwordTextField.trailingAnchor).isActive = true
         passwordConfirmTextField.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20).isActive = true
         passwordConfirmTextField.heightAnchor.constraint(equalTo: passwordTextField.heightAnchor).isActive = true
-        //
+        //次へ進むボタン
+        nextViewButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        nextViewButton.topAnchor.constraint(equalTo: passwordConfirmTextField.bottomAnchor, constant: 20).isActive = true
+        nextViewButton.heightAnchor.constraint(equalTo: passwordConfirmTextField.heightAnchor).isActive = true
+        nextViewButton.widthAnchor.constraint(equalTo: passwordConfirmTextField.widthAnchor, multiplier: 0.5).isActive = true
     }
     
 }
