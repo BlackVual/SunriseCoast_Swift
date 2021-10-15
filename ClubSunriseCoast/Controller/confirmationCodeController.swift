@@ -20,7 +20,7 @@ class ConfirmationCodeViewController:UIViewController{
         
         //SetUp
         //Viewの追加
-        
+        viewSetup()
         //背景画像セット
     }
     

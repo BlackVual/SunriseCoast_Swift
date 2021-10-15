@@ -7,6 +7,9 @@
 
 import Foundation
 import  UIKit
+protocol signUpViewDelegate:AnyObject {
+    func viewtransiton(nextViewButtontapped view:SignUpview)
+}
 
 class SignUpview:UIView{
     override init(frame: CGRect) {
@@ -42,6 +45,8 @@ class SignUpview:UIView{
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    //変数宣言
+        weak var delegate:signUpViewDelegate?
 
 //ボタン・フィールド定義
 
@@ -114,8 +119,13 @@ class SignUpview:UIView{
         returnUIButton.backgroundColor = UIColor.init(red: 193/255, green: 236/255, blue: 255/255, alpha: 100/100)
         returnUIButton.layer.cornerRadius = 10.0
         returnUIButton.setTitle("次に進む", for: .normal)
+        returnUIButton.addTarget(self, action: #selector(nextViewButtontapped), for: .touchUpInside)
         return returnUIButton
     }()
+    //次へ進むボタンタップ押下時の挙動
+    @objc func nextViewButtontapped(){
+        delegate?.viewtransiton(nextViewButtontapped: self)
+    }
     
     func autoLayoutSetUp() {
         //各オブジェクトをViewに追加

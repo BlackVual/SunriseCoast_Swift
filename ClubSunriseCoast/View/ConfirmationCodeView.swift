@@ -13,6 +13,7 @@ class  ConfirmationCodeView:UIView{
         super.init(frame: frame)
 //        autoLayoutSetUp()
 //        autoLayout()
+        self.backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {
