@@ -116,7 +116,7 @@ class SignUpview:UIView{
     //次に進むボタン
     let nextViewButton:UIButton = {
         let returnUIButton = UIButton()
-        returnUIButton.backgroundColor = UIColor.init(red: 193/255, green: 236/255, blue: 255/255, alpha: 100/100)
+        returnUIButton.backgroundColor = UIColor.init(red: 200/255, green: 240/255, blue: 255/255, alpha: 100/100)
         returnUIButton.layer.cornerRadius = 10.0
         returnUIButton.setTitle("次に進む", for: .normal)
         returnUIButton.addTarget(self, action: #selector(nextViewButtontapped), for: .touchUpInside)
