@@ -1,0 +1,6 @@
+framework module Pods_ClubSunriseCoast_ClubSunriseCoastUITests {
+  umbrella header "Pods-ClubSunriseCoast-ClubSunriseCoastUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
