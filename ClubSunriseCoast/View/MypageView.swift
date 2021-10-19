@@ -1,7 +1,7 @@
 //
 //  ConfirmationCode.swift
 //  ClubSunriseCoast
-//
+//　なんかMypageも壊れている〜〜〜
 //  Created by KOJIRO MARUYAMA on 2021/10/15.
 import Foundation
 import UIKit
