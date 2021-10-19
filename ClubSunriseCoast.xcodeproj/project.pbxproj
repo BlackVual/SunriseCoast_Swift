@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0BE4E9BC5E99C83092BBBEF /* Pods_ClubSunriseCoastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC1BE293E6DC2491A8FF9D /* Pods_ClubSunriseCoastTests.framework */; };
 		D602BF9F2625890C003C79DA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D602BF9E2625890C003C79DA /* SignInView.swift */; };
 		D62EE7B4267843B500595E17 /* PasswordDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62EE7B3267843B500595E17 /* PasswordDate.swift */; };
 		D6490205261C02B200A2E0A4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6490204261C02B200A2E0A4 /* SignInViewController.swift */; };
 		D65FF38D2716C58600E4AC11 /* UIBezierFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */; };
-		D65FF38F2719585F00E4AC11 /* ConfirmationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF38E2719585F00E4AC11 /* ConfirmationCodeView.swift */; };
-		D65FF391271958B200E4AC11 /* confirmationCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF390271958B200E4AC11 /* confirmationCodeController.swift */; };
+		D65FF38F2719585F00E4AC11 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF38E2719585F00E4AC11 /* MypageView.swift */; };
+		D65FF391271958B200E4AC11 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF390271958B200E4AC11 /* MypageViewController.swift */; };
+		D65FF393271D3C8400E4AC11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D65FF392271D3C8400E4AC11 /* GoogleService-Info.plist */; };
+		D65FF395271D65CD00E4AC11 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF394271D65CD00E4AC11 /* Post.swift */; };
+		D65FF397271D65D700E4AC11 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF396271D65D700E4AC11 /* User.swift */; };
 		D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */; };
 		D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */; };
 		D661B15925FD9C6B00ED4D28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15825FD9C6B00ED4D28 /* ViewController.swift */; };
@@ -36,6 +40,8 @@
 		D6E2F64026DF5ACE00205107 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2F63F26DF5ACE00205107 /* SignUpView.swift */; };
 		D6F23AFC26E5AF4600C094F2 /* SemiModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F23AFB26E5AF4600C094F2 /* SemiModalPresenter.swift */; };
 		D6F23B0026E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F23AFF26E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift */; };
+		E9DEA028382D8C1C39805C88 /* Pods_ClubSunriseCoast_ClubSunriseCoastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2797D5A4E697B32767D19E /* Pods_ClubSunriseCoast_ClubSunriseCoastUITests.framework */; };
+		F2140BE2303AA3EA75EE6FAC /* Pods_ClubSunriseCoast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A646BD3CFBF7D2892CEE5EEE /* Pods_ClubSunriseCoast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +62,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45882A3B232D2258ED0FA435 /* Pods-ClubSunriseCoast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubSunriseCoast.release.xcconfig"; path = "Target Support Files/Pods-ClubSunriseCoast/Pods-ClubSunriseCoast.release.xcconfig"; sourceTree = "<group>"; };
+		89FC22216C8B895893B0F9D3 /* Pods-ClubSunriseCoast-ClubSunriseCoastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubSunriseCoast-ClubSunriseCoastUITests.debug.xcconfig"; path = "Target Support Files/Pods-ClubSunriseCoast-ClubSunriseCoastUITests/Pods-ClubSunriseCoast-ClubSunriseCoastUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EAE331E89519F91DF776A55 /* Pods-ClubSunriseCoastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubSunriseCoastTests.release.xcconfig"; path = "Target Support Files/Pods-ClubSunriseCoastTests/Pods-ClubSunriseCoastTests.release.xcconfig"; sourceTree = "<group>"; };
+		A646BD3CFBF7D2892CEE5EEE /* Pods_ClubSunriseCoast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClubSunriseCoast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00CA957C795A3CDE2E8D41E /* Pods-ClubSunriseCoast-ClubSunriseCoastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubSunriseCoast-ClubSunriseCoastUITests.release.xcconfig"; path = "Target Support Files/Pods-ClubSunriseCoast-ClubSunriseCoastUITests/Pods-ClubSunriseCoast-ClubSunriseCoastUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA2797D5A4E697B32767D19E /* Pods_ClubSunriseCoast_ClubSunriseCoastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClubSunriseCoast_ClubSunriseCoastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFC1BE293E6DC2491A8FF9D /* Pods_ClubSunriseCoastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClubSunriseCoastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D602BF9E2625890C003C79DA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D62EE7B3267843B500595E17 /* PasswordDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordDate.swift; sourceTree = "<group>"; };
 		D6490204261C02B200A2E0A4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierFormula.swift; sourceTree = "<group>"; };
-		D65FF38E2719585F00E4AC11 /* ConfirmationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationCodeView.swift; sourceTree = "<group>"; };
-		D65FF390271958B200E4AC11 /* confirmationCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmationCodeController.swift; sourceTree = "<group>"; };
+		D65FF38E2719585F00E4AC11 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
+		D65FF390271958B200E4AC11 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		D65FF392271D3C8400E4AC11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D65FF394271D65CD00E4AC11 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D65FF396271D65D700E4AC11 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D661B15125FD9C6B00ED4D28 /* ClubSunriseCoast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubSunriseCoast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +107,8 @@
 		D6E2F63F26DF5ACE00205107 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		D6F23AFB26E5AF4600C094F2 /* SemiModalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalPresenter.swift; sourceTree = "<group>"; };
 		D6F23AFF26E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalDismissInteractiveTransition.swift; sourceTree = "<group>"; };
+		E8A8BEC7B254C9E1AEF7A2C8 /* Pods-ClubSunriseCoast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubSunriseCoast.debug.xcconfig"; path = "Target Support Files/Pods-ClubSunriseCoast/Pods-ClubSunriseCoast.debug.xcconfig"; sourceTree = "<group>"; };
+		EBF183BFA6AFD6758ABF37F4 /* Pods-ClubSunriseCoastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubSunriseCoastTests.debug.xcconfig"; path = "Target Support Files/Pods-ClubSunriseCoastTests/Pods-ClubSunriseCoastTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2140BE2303AA3EA75EE6FAC /* Pods_ClubSunriseCoast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BE4E9BC5E99C83092BBBEF /* Pods_ClubSunriseCoastTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,12 +132,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DEA028382D8C1C39805C88 /* Pods_ClubSunriseCoast_ClubSunriseCoastUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		744ABCB9786E708E23D71F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A646BD3CFBF7D2892CEE5EEE /* Pods_ClubSunriseCoast.framework */,
+				CA2797D5A4E697B32767D19E /* Pods_ClubSunriseCoast_ClubSunriseCoastUITests.framework */,
+				CEFC1BE293E6DC2491A8FF9D /* Pods_ClubSunriseCoastTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D661B14825FD9C6B00ED4D28 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +156,8 @@
 				D661B16A25FD9C6D00ED4D28 /* ClubSunriseCoastTests */,
 				D661B17525FD9C6D00ED4D28 /* ClubSunriseCoastUITests */,
 				D661B15225FD9C6B00ED4D28 /* Products */,
+				D6B45F50706DAD37381B9EBB /* Pods */,
+				744ABCB9786E708E23D71F6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +180,7 @@
 				D6E6683C26004A8D00CACF14 /* Controller */,
 				D661B15F25FD9C6C00ED4D28 /* LaunchScreen.storyboard */,
 				D661B16225FD9C6C00ED4D28 /* Info.plist */,
+				D65FF392271D3C8400E4AC11 /* GoogleService-Info.plist */,
 			);
 			path = ClubSunriseCoast;
 			sourceTree = "<group>";
@@ -169,6 +203,19 @@
 			path = ClubSunriseCoastUITests;
 			sourceTree = "<group>";
 		};
+		D6B45F50706DAD37381B9EBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8A8BEC7B254C9E1AEF7A2C8 /* Pods-ClubSunriseCoast.debug.xcconfig */,
+				45882A3B232D2258ED0FA435 /* Pods-ClubSunriseCoast.release.xcconfig */,
+				89FC22216C8B895893B0F9D3 /* Pods-ClubSunriseCoast-ClubSunriseCoastUITests.debug.xcconfig */,
+				B00CA957C795A3CDE2E8D41E /* Pods-ClubSunriseCoast-ClubSunriseCoastUITests.release.xcconfig */,
+				EBF183BFA6AFD6758ABF37F4 /* Pods-ClubSunriseCoastTests.debug.xcconfig */,
+				9EAE331E89519F91DF776A55 /* Pods-ClubSunriseCoastTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D6E6683A26004A8000CACF14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +225,8 @@
 				D6AFFAD726F1F0BC00ED6AE2 /* SignUpViewData.swift */,
 				D62EE7B3267843B500595E17 /* PasswordDate.swift */,
 				D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */,
+				D65FF394271D65CD00E4AC11 /* Post.swift */,
+				D65FF396271D65D700E4AC11 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,7 +239,7 @@
 				D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */,
 				D602BF9E2625890C003C79DA /* SignInView.swift */,
 				D6E2F63F26DF5ACE00205107 /* SignUpView.swift */,
-				D65FF38E2719585F00E4AC11 /* ConfirmationCodeView.swift */,
+				D65FF38E2719585F00E4AC11 /* MypageView.swift */,
 				D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */,
 			);
 			path = View;
@@ -203,7 +252,7 @@
 				D661B19A25FDFD8B00ED4D28 /* SideMenuViewController.swift */,
 				D6490204261C02B200A2E0A4 /* SignInViewController.swift */,
 				D6CE69CE26DF62CD00F8DA05 /* SignUpViewController.swift */,
-				D65FF390271958B200E4AC11 /* confirmationCodeController.swift */,
+				D65FF390271958B200E4AC11 /* MypageViewController.swift */,
 				D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */,
 				D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */,
 			);
@@ -230,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D661B17B25FD9C6D00ED4D28 /* Build configuration list for PBXNativeTarget "ClubSunriseCoast" */;
 			buildPhases = (
+				A9B40430522BC33DF54AE1D6 /* [CP] Check Pods Manifest.lock */,
 				D661B14D25FD9C6B00ED4D28 /* Sources */,
 				D661B14E25FD9C6B00ED4D28 /* Frameworks */,
 				D661B14F25FD9C6B00ED4D28 /* Resources */,
+				238F5030AC41DDA435B68039 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D661B17E25FD9C6D00ED4D28 /* Build configuration list for PBXNativeTarget "ClubSunriseCoastTests" */;
 			buildPhases = (
+				2D6C3FE547DC3B96EB5C8D8C /* [CP] Check Pods Manifest.lock */,
 				D661B16325FD9C6D00ED4D28 /* Sources */,
 				D661B16425FD9C6D00ED4D28 /* Frameworks */,
 				D661B16525FD9C6D00ED4D28 /* Resources */,
@@ -265,9 +317,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D661B18125FD9C6D00ED4D28 /* Build configuration list for PBXNativeTarget "ClubSunriseCoastUITests" */;
 			buildPhases = (
+				3BD6CA6DB6E58945142ADCF3 /* [CP] Check Pods Manifest.lock */,
 				D661B16E25FD9C6D00ED4D28 /* Sources */,
 				D661B16F25FD9C6D00ED4D28 /* Frameworks */,
 				D661B17025FD9C6D00ED4D28 /* Resources */,
+				71CA7E76C63B180F0A910406 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D661B16125FD9C6C00ED4D28 /* LaunchScreen.storyboard in Resources */,
+				D65FF393271D3C8400E4AC11 /* GoogleService-Info.plist in Resources */,
 				D661B15E25FD9C6C00ED4D28 /* Assets.xcassets in Resources */,
 				D661B15C25FD9C6B00ED4D28 /* Main.storyboard in Resources */,
 			);
@@ -348,11 +403,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		238F5030AC41DDA435B68039 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClubSunriseCoast/Pods-ClubSunriseCoast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClubSunriseCoast/Pods-ClubSunriseCoast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClubSunriseCoast/Pods-ClubSunriseCoast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D6C3FE547DC3B96EB5C8D8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClubSunriseCoastTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BD6CA6DB6E58945142ADCF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClubSunriseCoast-ClubSunriseCoastUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71CA7E76C63B180F0A910406 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClubSunriseCoast-ClubSunriseCoastUITests/Pods-ClubSunriseCoast-ClubSunriseCoastUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClubSunriseCoast-ClubSunriseCoastUITests/Pods-ClubSunriseCoast-ClubSunriseCoastUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClubSunriseCoast-ClubSunriseCoastUITests/Pods-ClubSunriseCoast-ClubSunriseCoastUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9B40430522BC33DF54AE1D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClubSunriseCoast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D661B14D25FD9C6B00ED4D28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65FF397271D65D700E4AC11 /* User.swift in Sources */,
 				D661B15925FD9C6B00ED4D28 /* ViewController.swift in Sources */,
 				D6E2F64026DF5ACE00205107 /* SignUpView.swift in Sources */,
 				D6B1D78D26689BDD0023D24A /* UICollectionViewCell.swift in Sources */,
@@ -362,6 +521,7 @@
 				D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */,
 				D65FF38D2716C58600E4AC11 /* UIBezierFormula.swift in Sources */,
 				D6F23B0026E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift in Sources */,
+				D65FF395271D65CD00E4AC11 /* Post.swift in Sources */,
 				D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */,
 				D6C0FA4226E74824000A0978 /* SemiModalPresentationController.swift in Sources */,
 				D6AFFAD826F1F0BC00ED6AE2 /* SignUpViewData.swift in Sources */,
@@ -373,9 +533,9 @@
 				D661B19B25FDFD8B00ED4D28 /* SideMenuViewController.swift in Sources */,
 				D6C0FA3E26E7369A000A0978 /* SemiModalIndicatorView.swift in Sources */,
 				D6C0FA4026E73B69000A0978 /* SemiModalOverlayView.swift in Sources */,
-				D65FF38F2719585F00E4AC11 /* ConfirmationCodeView.swift in Sources */,
+				D65FF38F2719585F00E4AC11 /* MypageView.swift in Sources */,
 				D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */,
-				D65FF391271958B200E4AC11 /* confirmationCodeController.swift in Sources */,
+				D65FF391271958B200E4AC11 /* MypageViewController.swift in Sources */,
 				D6F23AFC26E5AF4600C094F2 /* SemiModalPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +709,7 @@
 		};
 		D661B17C25FD9C6D00ED4D28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A8BEC7B254C9E1AEF7A2C8 /* Pods-ClubSunriseCoast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -568,6 +729,7 @@
 		};
 		D661B17D25FD9C6D00ED4D28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45882A3B232D2258ED0FA435 /* Pods-ClubSunriseCoast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -587,6 +749,7 @@
 		};
 		D661B17F25FD9C6D00ED4D28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF183BFA6AFD6758ABF37F4 /* Pods-ClubSunriseCoastTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -609,6 +772,7 @@
 		};
 		D661B18025FD9C6D00ED4D28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EAE331E89519F91DF776A55 /* Pods-ClubSunriseCoastTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -631,6 +795,7 @@
 		};
 		D661B18225FD9C6D00ED4D28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FC22216C8B895893B0F9D3 /* Pods-ClubSunriseCoast-ClubSunriseCoastUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -651,6 +816,7 @@
 		};
 		D661B18325FD9C6D00ED4D28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B00CA957C795A3CDE2E8D41E /* Pods-ClubSunriseCoast-ClubSunriseCoastUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

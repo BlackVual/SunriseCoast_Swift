@@ -31,9 +31,6 @@ class SignInViewController:UIViewController{
         viewSetup()
     }
     
-
-    
-    
 }
 
 extension SignInViewController:signInViewDelegate,UIViewControllerTransitioningDelegate {

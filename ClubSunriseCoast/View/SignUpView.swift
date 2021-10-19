@@ -8,14 +8,20 @@
 import Foundation
 import  UIKit
 protocol signUpViewDelegate:AnyObject {
-    func viewtransiton(nextViewButtontapped view:SignUpview)
+    func registerAcount(RegisterAcount view:SignUpview)
 }
 
-class SignUpview:UIView{
+class SignUpview:UIView,UITextFieldDelegate{
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.backgroundColor = .white
+        self.backgroundColor = .clear
+        
+        lastNameTextField.delegate = self
+        firstNameTextField.delegate = self
+        mailAddressTextField.delegate = self
+        passwordTextField.delegate = self
+        passwordConfirmTextField.delegate = self
         
         autoLayoutSetUp()
         autoLayout()
@@ -50,10 +56,22 @@ class SignUpview:UIView{
 
 //ボタン・フィールド定義
 
-    //背景イメージビュー
-    let imageView:UIImageView = {
-        let returnImageView = UIImageView()
-        return returnImageView
+    //背景透過ブラービュー
+    let blurEffectView:UIVisualEffectView = {
+        let returnUIBlurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
+        let blurEffectView = UIVisualEffectView(effect: returnUIBlurEffect)
+        
+        return blurEffectView
+    }()
+    //タイトルラベル
+    let signUpTitleLabel1:UILabel = {
+        let returnLabel = UILabel()
+        returnLabel.text = "SRC IDを作成"
+        returnLabel.textColor = .white
+        returnLabel.backgroundColor = .clear
+        returnLabel.textAlignment = NSTextAlignment.center
+        returnLabel.adjustsFontSizeToFitWidth = true
+        return returnLabel
     }()
     //姓テキストフィールド
     let lastNameTextField:UITextField = {
@@ -124,12 +142,20 @@ class SignUpview:UIView{
     }()
     //次へ進むボタンタップ押下時の挙動
     @objc func nextViewButtontapped(){
-        delegate?.viewtransiton(nextViewButtontapped: self)
+        delegate?.registerAcount(RegisterAcount: self)
     }
+    
+    let uiView:UIView = {
+        let returnUiView = UIView()
+        returnUiView.backgroundColor = .white
+        return returnUiView
+    }()
+
     
     func autoLayoutSetUp() {
         //各オブジェクトをViewに追加
-        addSubview(imageView)
+        addSubview(uiView)
+        addSubview(blurEffectView)
         addSubview(lastNameTextField)
         addSubview(firstNameTextField)
         addSubview(dateOfBirthTextField)
@@ -137,35 +163,38 @@ class SignUpview:UIView{
         addSubview(passwordTextField)
         addSubview(passwordConfirmTextField)
         addSubview(nextViewButton)
+        addSubview(signUpTitleLabel1)
+
 
         //UIオートレイアウトと競合させない処理
         lastNameTextField.translatesAutoresizingMaskIntoConstraints = false
         firstNameTextField.translatesAutoresizingMaskIntoConstraints = false
         dateOfBirthTextField.translatesAutoresizingMaskIntoConstraints = false
-        imageView.translatesAutoresizingMaskIntoConstraints = false
+        blurEffectView.translatesAutoresizingMaskIntoConstraints = false
         datapicker.translatesAutoresizingMaskIntoConstraints = false
         mailAddressTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordConfirmTextField.translatesAutoresizingMaskIntoConstraints = false
         nextViewButton.translatesAutoresizingMaskIntoConstraints = false
+        uiView.translatesAutoresizingMaskIntoConstraints = false
+        signUpTitleLabel1.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func autoLayout() {
         
         //背景イメージビュー
-        imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -UIScreen.main.bounds.height/1.4).isActive = true
-        
+        blurEffectView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        blurEffectView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        blurEffectView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        blurEffectView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -UIScreen.main.bounds.height/1.17).isActive = true
         //姓テキストフィールド
         lastNameTextField.trailingAnchor.constraint(equalTo: self.centerXAnchor, constant: -10).isActive = true
-        lastNameTextField.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20).isActive = true
+        lastNameTextField.topAnchor.constraint(equalTo: blurEffectView.bottomAnchor, constant: 20).isActive = true
         lastNameTextField.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.375).isActive = true
         lastNameTextField.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.05).isActive = true
         //名テキストフィールド
         firstNameTextField.leadingAnchor.constraint(equalTo: self.centerXAnchor, constant: 10).isActive = true
-        firstNameTextField.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20).isActive = true
+        firstNameTextField.topAnchor.constraint(equalTo: blurEffectView.bottomAnchor, constant: 20).isActive = true
         firstNameTextField.widthAnchor.constraint(equalTo: lastNameTextField.widthAnchor).isActive = true
         firstNameTextField.heightAnchor.constraint(equalTo: lastNameTextField.heightAnchor).isActive = true
         //生年月日フィールド
@@ -193,6 +222,17 @@ class SignUpview:UIView{
         nextViewButton.topAnchor.constraint(equalTo: passwordConfirmTextField.bottomAnchor, constant: 20).isActive = true
         nextViewButton.heightAnchor.constraint(equalTo: passwordConfirmTextField.heightAnchor).isActive = true
         nextViewButton.widthAnchor.constraint(equalTo: passwordConfirmTextField.widthAnchor, multiplier: 0.5).isActive = true
+        //背景View
+        uiView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        uiView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        uiView.topAnchor.constraint(equalTo: blurEffectView.bottomAnchor).isActive = true
+        uiView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        //タイトルラベル
+        signUpTitleLabel1.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        signUpTitleLabel1.topAnchor.constraint(equalTo: blurEffectView.topAnchor).isActive = true
+        signUpTitleLabel1.widthAnchor.constraint(equalTo: blurEffectView.widthAnchor, multiplier: 0.5).isActive = true
+        signUpTitleLabel1.heightAnchor.constraint(equalTo: blurEffectView.heightAnchor).isActive = true
+
     }
     
 }
@@ -217,3 +257,18 @@ extension SignUpview{
     }
 }
 
+extension SignUpview{
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        lastNameTextField.resignFirstResponder()
+        firstNameTextField.resignFirstResponder()
+        mailAddressTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        passwordConfirmTextField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.endEditing(true)
+    }
+    
+}
