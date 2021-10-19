@@ -14,7 +14,7 @@ class MypageViewController:UIViewController{
     //インスタンス化（Model）
 
     //インスタンス化（View）
-    let MypageView = MypageView()
+    let mypageView = MypageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,6 @@ extension MypageViewController{
 //    }
     
     func viewSetup(){
-        self.view = MypageView
+        self.view = mypageView
     }
 }
