@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,6 @@
 		D62EE7B4267843B500595E17 /* PasswordDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62EE7B3267843B500595E17 /* PasswordDate.swift */; };
 		D6490205261C02B200A2E0A4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6490204261C02B200A2E0A4 /* SignInViewController.swift */; };
 		D65FF38D2716C58600E4AC11 /* UIBezierFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */; };
-		D65FF38F2719585F00E4AC11 /* ConfirmationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF38E2719585F00E4AC11 /* ConfirmationCodeView.swift */; };
-		D65FF391271958B200E4AC11 /* confirmationCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF390271958B200E4AC11 /* confirmationCodeController.swift */; };
 		D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */; };
 		D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */; };
 		D661B15925FD9C6B00ED4D28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15825FD9C6B00ED4D28 /* ViewController.swift */; };
@@ -71,8 +69,6 @@
 		D62EE7B3267843B500595E17 /* PasswordDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordDate.swift; sourceTree = "<group>"; };
 		D6490204261C02B200A2E0A4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierFormula.swift; sourceTree = "<group>"; };
-		D65FF38E2719585F00E4AC11 /* ConfirmationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationCodeView.swift; sourceTree = "<group>"; };
-		D65FF390271958B200E4AC11 /* confirmationCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmationCodeController.swift; sourceTree = "<group>"; };
 		D661B15125FD9C6B00ED4D28 /* ClubSunriseCoast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubSunriseCoast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,7 +139,6 @@
 				998F0B8093CFB6866D96A0F8 /* Pods-ClubSunriseCoastTests.debug.xcconfig */,
 				A7F713ECEDA497F27664A5B4 /* Pods-ClubSunriseCoastTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -231,7 +226,6 @@
 				D66FF7EF266DBE0C00FDBD88 /* UIViewanimation.swift */,
 				D602BF9E2625890C003C79DA /* SignInView.swift */,
 				D6E2F63F26DF5ACE00205107 /* SignUpView.swift */,
-				D65FF38E2719585F00E4AC11 /* ConfirmationCodeView.swift */,
 				D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */,
 			);
 			path = View;
@@ -244,7 +238,6 @@
 				D661B19A25FDFD8B00ED4D28 /* SideMenuViewController.swift */,
 				D6490204261C02B200A2E0A4 /* SignInViewController.swift */,
 				D6CE69CE26DF62CD00F8DA05 /* SignUpViewController.swift */,
-				D65FF390271958B200E4AC11 /* confirmationCodeController.swift */,
 				D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */,
 				D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */,
 			);
@@ -522,9 +515,7 @@
 				D661B19B25FDFD8B00ED4D28 /* SideMenuViewController.swift in Sources */,
 				D6C0FA3E26E7369A000A0978 /* SemiModalIndicatorView.swift in Sources */,
 				D6C0FA4026E73B69000A0978 /* SemiModalOverlayView.swift in Sources */,
-				D65FF38F2719585F00E4AC11 /* ConfirmationCodeView.swift in Sources */,
 				D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */,
-				D65FF391271958B200E4AC11 /* confirmationCodeController.swift in Sources */,
 				D6F23AFC26E5AF4600C094F2 /* SemiModalPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
