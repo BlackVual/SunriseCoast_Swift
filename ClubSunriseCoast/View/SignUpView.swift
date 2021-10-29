@@ -17,35 +17,25 @@ class SignUpview:UIView,UITextFieldDelegate{
         
         self.backgroundColor = .clear
         
+        //デリゲートの適用
         lastNameTextField.delegate = self
         firstNameTextField.delegate = self
         mailAddressTextField.delegate = self
         passwordTextField.delegate = self
         passwordConfirmTextField.delegate = self
-        
+        uiView.delegate = self
+        //レイアウトの前準備
         autoLayoutSetUp()
+        //オートレイアウトの設定
         autoLayout()
+        //データピッカーの設定
         datapickerSetup()
     }
     
-    override func draw(_ rect: CGRect) {
-        let centerValue = UIBezierFormula()
-        let YValue = centerValue.centerYaxisGet(topObjecMinY: dateOfBirthTextField.frame.minY, buttomObjecMaxY: mailAddressTextField.frame.maxY)
-        // テキストフィールド間の直線 -------------------------------------
-        // UIBezierPath のインスタンス生成
-        let line = UIBezierPath();
-        // 起点
-        line.move(to: CGPoint(x: self.frame.minX, y: YValue));
-        // 帰着点
-        line.addLine(to: CGPoint(x: self.frame.maxX, y:YValue));
-        // ラインを結ぶ
-        line.close()
-        // 色の設定
-        UIColor.init(red: 230/255, green: 230/255, blue: 230/255, alpha: 100/100).setStroke()
-        // ライン幅
-        line.lineWidth = 2
-        // 描画
-        line.stroke();
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        //背景Viewのセットアップ
+        uiView.Setup()
     }
     
     required init?(coder: NSCoder) {
@@ -144,13 +134,8 @@ class SignUpview:UIView,UITextFieldDelegate{
     @objc func nextViewButtontapped(){
         delegate?.registerAcount(RegisterAcount: self)
     }
-    
-    let uiView:UIView = {
-        let returnUiView = UIView()
-        returnUiView.backgroundColor = .white
-        return returnUiView
-    }()
-
+    //背景View（中身はExtension）
+    let uiView = reuseView()
     
     func autoLayoutSetUp() {
         //各オブジェクトをViewに追加
@@ -237,6 +222,8 @@ class SignUpview:UIView,UITextFieldDelegate{
     
 }
 
+
+
 extension SignUpview{
     func datapickerSetup() {
         // ピッカー設定
@@ -250,7 +237,7 @@ extension SignUpview{
         //ツールバーに各セット
         toolbar.setItems([spacelItem, doneItem], animated: true)
         
-//         インプットビュー設定
+        //インプットビュー設定
         dateOfBirthTextField.inputView = datapicker
         dateOfBirthTextField.inputAccessoryView = toolbar
         
@@ -259,6 +246,7 @@ extension SignUpview{
 
 extension SignUpview{
     
+    //リターンボタンを押下したらキーボードがしまわれる処理
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         lastNameTextField.resignFirstResponder()
         firstNameTextField.resignFirstResponder()
@@ -267,8 +255,27 @@ extension SignUpview{
         passwordConfirmTextField.resignFirstResponder()
         return true
     }
+    //空白の部分をタッチしたらキーボードがしまわれる処理
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.endEditing(true)
     }
     
+}
+
+extension SignUpview:reuseViewProtcol{
+    
+    func reuseViewSetUp(reuseview: reuseView) {
+        let mailRect = self.convert(mailAddressTextField.frame, to: reuseview)
+        let dateOfBirthRect = self.convert(self.dateOfBirthTextField.frame, to: reuseview)
+
+        reuseview.backgroundColor = .white
+        reuseview.topobjectMinY = mailRect.minY
+        reuseview.buttomObjectMaxY = dateOfBirthRect.maxY
+        reuseview.red = 230
+        reuseview.green = 230
+        reuseview.blue = 230
+        reuseview.alphaValue = 100
+        reuseview.lineWidth = 2
+    
+    }
 }

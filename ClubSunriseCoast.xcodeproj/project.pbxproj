@@ -14,8 +14,6 @@
 		D65FF38D2716C58600E4AC11 /* UIBezierFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */; };
 		D65FF38F2719585F00E4AC11 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF38E2719585F00E4AC11 /* MypageView.swift */; };
 		D65FF391271958B200E4AC11 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF390271958B200E4AC11 /* MypageViewController.swift */; };
-		D65FF393271D3C8400E4AC11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D65FF392271D3C8400E4AC11 /* GoogleService-Info.plist */; };
-		D65FF395271D65CD00E4AC11 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF394271D65CD00E4AC11 /* Post.swift */; };
 		D65FF397271D65D700E4AC11 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF396271D65D700E4AC11 /* User.swift */; };
 		D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */; };
 		D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661B15625FD9C6B00ED4D28 /* SceneDelegate.swift */; };
@@ -38,6 +36,10 @@
 		D6C0FA4426E761F9000A0978 /* SemiModalDismissAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0FA4326E761F9000A0978 /* SemiModalDismissAnimatedTransition.swift */; };
 		D6CE69CF26DF62CD00F8DA05 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CE69CE26DF62CD00F8DA05 /* SignUpViewController.swift */; };
 		D6E2F64026DF5ACE00205107 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2F63F26DF5ACE00205107 /* SignUpView.swift */; };
+		D6EE40B9271EF21B00466E7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6EE40B8271EF21B00466E7D /* GoogleService-Info.plist */; };
+		D6EE40BB271EF6E900466E7D /* profileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE40BA271EF6E900466E7D /* profileData.swift */; };
+		D6EE40BD2727E02100466E7D /* TempData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE40BC2727E02100466E7D /* TempData.swift */; };
+		D6EE40BF2728EA4F00466E7D /* ReuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE40BE2728EA4F00466E7D /* ReuseView.swift */; };
 		D6F23AFC26E5AF4600C094F2 /* SemiModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F23AFB26E5AF4600C094F2 /* SemiModalPresenter.swift */; };
 		D6F23B0026E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F23AFF26E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift */; };
 		E9DEA028382D8C1C39805C88 /* Pods_ClubSunriseCoast_ClubSunriseCoastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2797D5A4E697B32767D19E /* Pods_ClubSunriseCoast_ClubSunriseCoastUITests.framework */; };
@@ -75,8 +77,6 @@
 		D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierFormula.swift; sourceTree = "<group>"; };
 		D65FF38E2719585F00E4AC11 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
 		D65FF390271958B200E4AC11 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
-		D65FF392271D3C8400E4AC11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D65FF394271D65CD00E4AC11 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D65FF396271D65D700E4AC11 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D661B15125FD9C6B00ED4D28 /* ClubSunriseCoast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubSunriseCoast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D661B15425FD9C6B00ED4D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +105,10 @@
 		D6C0FA4326E761F9000A0978 /* SemiModalDismissAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalDismissAnimatedTransition.swift; sourceTree = "<group>"; };
 		D6CE69CE26DF62CD00F8DA05 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D6E2F63F26DF5ACE00205107 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D6EE40B8271EF21B00466E7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D6EE40BA271EF6E900466E7D /* profileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileData.swift; sourceTree = "<group>"; };
+		D6EE40BC2727E02100466E7D /* TempData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempData.swift; sourceTree = "<group>"; };
+		D6EE40BE2728EA4F00466E7D /* ReuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseView.swift; sourceTree = "<group>"; };
 		D6F23AFB26E5AF4600C094F2 /* SemiModalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalPresenter.swift; sourceTree = "<group>"; };
 		D6F23AFF26E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalDismissInteractiveTransition.swift; sourceTree = "<group>"; };
 		E8A8BEC7B254C9E1AEF7A2C8 /* Pods-ClubSunriseCoast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubSunriseCoast.debug.xcconfig"; path = "Target Support Files/Pods-ClubSunriseCoast/Pods-ClubSunriseCoast.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,7 +184,7 @@
 				D6E6683C26004A8D00CACF14 /* Controller */,
 				D661B15F25FD9C6C00ED4D28 /* LaunchScreen.storyboard */,
 				D661B16225FD9C6C00ED4D28 /* Info.plist */,
-				D65FF392271D3C8400E4AC11 /* GoogleService-Info.plist */,
+				D6EE40B8271EF21B00466E7D /* GoogleService-Info.plist */,
 			);
 			path = ClubSunriseCoast;
 			sourceTree = "<group>";
@@ -225,8 +229,9 @@
 				D6AFFAD726F1F0BC00ED6AE2 /* SignUpViewData.swift */,
 				D62EE7B3267843B500595E17 /* PasswordDate.swift */,
 				D65FF38C2716C58600E4AC11 /* UIBezierFormula.swift */,
-				D65FF394271D65CD00E4AC11 /* Post.swift */,
 				D65FF396271D65D700E4AC11 /* User.swift */,
+				D6EE40BA271EF6E900466E7D /* profileData.swift */,
+				D6EE40BC2727E02100466E7D /* TempData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				D6E2F63F26DF5ACE00205107 /* SignUpView.swift */,
 				D65FF38E2719585F00E4AC11 /* MypageView.swift */,
 				D6B1D78C26689BDD0023D24A /* UICollectionViewCell.swift */,
+				D6EE40BE2728EA4F00466E7D /* ReuseView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,7 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D661B16125FD9C6C00ED4D28 /* LaunchScreen.storyboard in Resources */,
-				D65FF393271D3C8400E4AC11 /* GoogleService-Info.plist in Resources */,
+				D6EE40B9271EF21B00466E7D /* GoogleService-Info.plist in Resources */,
 				D661B15E25FD9C6C00ED4D28 /* Assets.xcassets in Resources */,
 				D661B15C25FD9C6B00ED4D28 /* Main.storyboard in Resources */,
 			);
@@ -521,20 +527,22 @@
 				D661B15525FD9C6B00ED4D28 /* AppDelegate.swift in Sources */,
 				D65FF38D2716C58600E4AC11 /* UIBezierFormula.swift in Sources */,
 				D6F23B0026E5F8CA00C094F2 /* SemiModalDismissInteractiveTransition.swift in Sources */,
-				D65FF395271D65CD00E4AC11 /* Post.swift in Sources */,
 				D66FF7EE2668C12700FDBD88 /* CollectionViewCelldataSorce.swift in Sources */,
 				D6C0FA4226E74824000A0978 /* SemiModalPresentationController.swift in Sources */,
 				D6AFFAD826F1F0BC00ED6AE2 /* SignUpViewData.swift in Sources */,
 				D6ABC83926D5DFA3007BB7DF /* SignInViewData.swift in Sources */,
 				D6CE69CF26DF62CD00F8DA05 /* SignUpViewController.swift in Sources */,
+				D6EE40BB271EF6E900466E7D /* profileData.swift in Sources */,
 				D602BF9F2625890C003C79DA /* SignInView.swift in Sources */,
 				D66FF7F0266DBE0C00FDBD88 /* UIViewanimation.swift in Sources */,
+				D6EE40BD2727E02100466E7D /* TempData.swift in Sources */,
 				D62EE7B4267843B500595E17 /* PasswordDate.swift in Sources */,
 				D661B19B25FDFD8B00ED4D28 /* SideMenuViewController.swift in Sources */,
 				D6C0FA3E26E7369A000A0978 /* SemiModalIndicatorView.swift in Sources */,
 				D6C0FA4026E73B69000A0978 /* SemiModalOverlayView.swift in Sources */,
 				D65FF38F2719585F00E4AC11 /* MypageView.swift in Sources */,
 				D661B15725FD9C6B00ED4D28 /* SceneDelegate.swift in Sources */,
+				D6EE40BF2728EA4F00466E7D /* ReuseView.swift in Sources */,
 				D65FF391271958B200E4AC11 /* MypageViewController.swift in Sources */,
 				D6F23AFC26E5AF4600C094F2 /* SemiModalPresenter.swift in Sources */,
 			);
